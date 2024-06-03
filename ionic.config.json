@@ -1,0 +1,7 @@
+{
+  "name": "igbo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
