@@ -32,6 +32,9 @@ importers:
       '@angular/router':
         specifier: ^18.0.1
         version: 18.0.1(@angular/common@18.0.1(@angular/core@18.0.1(rxjs@7.8.1)(zone.js@0.14.6))(rxjs@7.8.1))(@angular/core@18.0.1(rxjs@7.8.1)(zone.js@0.14.6))(@angular/platform-browser@18.0.1(@angular/animations@18.0.1(@angular/core@18.0.1(rxjs@7.8.1)(zone.js@0.14.6)))(@angular/common@18.0.1(@angular/core@18.0.1(rxjs@7.8.1)(zone.js@0.14.6))(rxjs@7.8.1))(@angular/core@18.0.1(rxjs@7.8.1)(zone.js@0.14.6)))(rxjs@7.8.1)
+      '@capacitor-community/background-geolocation':
+        specifier: ^1.2.17
+        version: 1.2.17(@capacitor/core@6.0.0)
       '@capacitor/android':
         specifier: ^6.0.0
         version: 6.0.0(@capacitor/core@6.0.0)
@@ -41,6 +44,12 @@ importers:
       '@capacitor/core':
         specifier: 6.0.0
         version: 6.0.0
+      '@capacitor/device':
+        specifier: ^6.0.0
+        version: 6.0.0(@capacitor/core@6.0.0)
+      '@capacitor/geolocation':
+        specifier: ^6.0.0
+        version: 6.0.0(@capacitor/core@6.0.0)
       '@capacitor/haptics':
         specifier: 6.0.0
         version: 6.0.0(@capacitor/core@6.0.0)
@@ -49,6 +58,9 @@ importers:
         version: 6.0.0(@capacitor/core@6.0.0)
       '@capacitor/keyboard':
         specifier: 6.0.0
+        version: 6.0.0(@capacitor/core@6.0.0)
+      '@capacitor/local-notifications':
+        specifier: ^6.0.0
         version: 6.0.0(@capacitor/core@6.0.0)
       '@capacitor/status-bar':
         specifier: 6.0.0
@@ -992,6 +1004,11 @@ packages:
     resolution: {integrity: sha512-WaMsgi6Q8zMgMth93GvWPXkhAIEobfsIkLTacoVZoK1J0CevIPGYY2Vo5YvJGqyHqXM6P4ppOYGsIRU8MM9pFQ==}
     engines: {node: '>=6.9.0'}
 
+  '@capacitor-community/background-geolocation@1.2.17':
+    resolution: {integrity: sha512-9EBLXdSyuYNy7YZAgxyMCRZYnN3FTSSWCNpem5ZjU9Yi8sCdswSbx1j+CwePP9aXggtBPImywrenv9+pj69TIg==}
+    peerDependencies:
+      '@capacitor/core': '>=3.0.0'
+
   '@capacitor/android@6.0.0':
     resolution: {integrity: sha512-NwL87VO9F1WY/EgvJZN9pIhjejq688k2fRW6XWNLVe3cgGE6nUb9J34KI68fhx3139cf2LVGPUYs+mwZC8esiQ==}
     peerDependencies:
@@ -1010,6 +1027,16 @@ packages:
   '@capacitor/core@6.0.0':
     resolution: {integrity: sha512-NvxIQsJcMiIV+Le1DilR2GGyQQbDInfXK1UywGROQ5mycdFlW5XoAPZ+MKnFGB123RoEgE3uhDGgwTXUmSlX9A==}
 
+  '@capacitor/device@6.0.0':
+    resolution: {integrity: sha512-3cV4XcH9pTWcstecyr8rNBQvFCsxYugJdPetk898airCbV1bqZSGF2YLSoPQj4BiDITSlNgwABNwNYMCNzs/gw==}
+    peerDependencies:
+      '@capacitor/core': ^6.0.0
+
+  '@capacitor/geolocation@6.0.0':
+    resolution: {integrity: sha512-8wrZe6gqfZmsCdvOvrqmezi2Pa8Nz6bQUFbDWsjUKHRzs+qreYNXngzhgKO83GEhHvodiJMnoDJrD2JeQt7FZg==}
+    peerDependencies:
+      '@capacitor/core': ^6.0.0
+
   '@capacitor/haptics@6.0.0':
     resolution: {integrity: sha512-z2TmB+pTbd98Il2I1xpZGClCFwORxxP2m9f1a0rh70c2ubj2atVyZctgxrx1fuoExZTNGSxHaylWfrmjmtelVg==}
     peerDependencies:
@@ -1022,6 +1049,11 @@ packages:
 
   '@capacitor/keyboard@6.0.0':
     resolution: {integrity: sha512-pPX/PQWWjw5ce47kHEYv6IWlHzuhAxgXihqEAAAGLdwK3u3srgGWCljXrYS9juVBPi/lA1uK7UaUzYI0XrgxVQ==}
+    peerDependencies:
+      '@capacitor/core': ^6.0.0
+
+  '@capacitor/local-notifications@6.0.0':
+    resolution: {integrity: sha512-a/g/ZlPgaBXue374oNzGvvNZWNpnclfcLzfE/P/PjhHxdHsM7J3OK0IfmjrEsRiON4AEIga+dkHi5yBjNAHCFw==}
     peerDependencies:
       '@capacitor/core': ^6.0.0
 
@@ -6706,6 +6738,10 @@ snapshots:
       '@babel/helper-validator-identifier': 7.24.6
       to-fast-properties: 2.0.0
 
+  '@capacitor-community/background-geolocation@1.2.17(@capacitor/core@6.0.0)':
+    dependencies:
+      '@capacitor/core': 6.0.0
+
   '@capacitor/android@6.0.0(@capacitor/core@6.0.0)':
     dependencies:
       '@capacitor/core': 6.0.0
@@ -6741,6 +6777,14 @@ snapshots:
     dependencies:
       tslib: 2.6.2
 
+  '@capacitor/device@6.0.0(@capacitor/core@6.0.0)':
+    dependencies:
+      '@capacitor/core': 6.0.0
+
+  '@capacitor/geolocation@6.0.0(@capacitor/core@6.0.0)':
+    dependencies:
+      '@capacitor/core': 6.0.0
+
   '@capacitor/haptics@6.0.0(@capacitor/core@6.0.0)':
     dependencies:
       '@capacitor/core': 6.0.0
@@ -6750,6 +6794,10 @@ snapshots:
       '@capacitor/core': 6.0.0
 
   '@capacitor/keyboard@6.0.0(@capacitor/core@6.0.0)':
+    dependencies:
+      '@capacitor/core': 6.0.0
+
+  '@capacitor/local-notifications@6.0.0(@capacitor/core@6.0.0)':
     dependencies:
       '@capacitor/core': 6.0.0
 
